@@ -19,7 +19,7 @@ export default function BlogPostSummary({blogItem, width = "1/3"} : Content){
                             </div>
                             <p className="text-gray-800 font-serif text-base px-6 mb-5">
                                 {blogItem.MainIntro}
-                                Hello World
+                          
                             </p>
                     </Link>
                 </div>
