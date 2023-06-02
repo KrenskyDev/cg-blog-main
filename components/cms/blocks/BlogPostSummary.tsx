@@ -6,6 +6,7 @@ interface Content {
 }
 export default function BlogPostSummary({blogItem, width = "1/3"} : Content){
     let image  = blogItem.PageImage == undefined ? blogItem.Image?.Url : blogItem.PageImage?.Url;
+    let image  = blogItem.PageImage.Url == null ? blogItem.Image?.Url : blogItem.PageImage?.Url;
     image = image == null ? `https://source.unsplash.com/random?city,landscape,${blogItem.Name}` : image;
     return(
         <>
